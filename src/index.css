@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Blue background wrapper */
+
+.wrapper {    
+  max-width: 60%;
+  height: 83vh; 
+  margin: auto;    
+  background: #6E81D0;    
+  margin-top: 30px;      
+  padding-left: 50px;    
+  padding-right: 50px;    
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  color: white;
+  margin-top: 1%;
+  caret-color: transparent;
+}
+
+.title-name {
+  color: white;
+  font-weight: 500;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 20%;
+  font-size: 30px;
+  height: 40%;
+  margin-top: 2%;
+  caret-color: white;
+}
+
+.title-name:hover{
+  background-color: #596cb9;
+}
+
+.title-name::placeholder {
+  color: white;
+  font-size: 30px;
+}
+
+.title-name:active {
+  color: black;
+}
+
+.title-icon {
+  color: white;
+  background-color: #596cb9;
+  width: 37px;
+  text-align: center;
+  border-radius: 5px;
+  padding-top: 4px;
+  cursor: pointer;
+  caret-color: transparent;
+}
+
+.todolistWindow {
+  height: 54vh;
+  overflow-y:auto;
+}
+
+.todolistWindow::-webkit-scrollbar {
+  display: none;
+}
+
+.addtodo {
+  display: flex;
+  align-items: center;
+  background-color: #596cb9;
+  color: white;
+  height: 48px;
+  width: 98%;
+  padding-left: 17px;
+}
+
+.addtodo-input{
+  margin-left: 10px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: white;
+  font-size: 17px;
+}
+
+.addtodo-input:focus {
+  outline: none;
+}
+
+.addtodo-input::placeholder {
+  color: white;
+  font-size: 17px;
+}
+
+.todoitem {
+  background-color: white;
+  height: 40px;
+  font-size: 17px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 1.5%;
+  margin-bottom: 1%;
+  caret-color: transparent;
+}
+
+.todoitem-1{
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.todoitem-icon {
+  padding-top: 0.5%;
+  cursor: pointer;
+}
+
+.todoitem-check-icon{
+  font-size: 23px;
+  position: relative;
+  left: -22px;
+  top: 1.8px;
+  cursor: pointer;
+  display: none;
+  color: #596cb9;
+  margin-right: -23px;
+}
+
+.todoitem-task {
+  padding-left: 2%;
+  /* padding-bottom: 0.5%; */
+}
+
+.todoitem-2 {
+  font-size: 22px;
+  margin-top: 1%;
+  cursor: pointer;
+}
